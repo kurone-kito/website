@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VTuber-Programmers-Network/website.git"
+  },
+  "author": "VTuber Programmer's Network",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/VTuber-Programmers-Network/website/issues"
+  },
+  "homepage": "https://github.com/VTuber-Programmers-Network/website#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
