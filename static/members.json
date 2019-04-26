@@ -1,0 +1,95 @@
+{
+  "members": [
+    {
+      "name": "創好リナ",
+      "job": "バーチャルイキリプログラマ",
+      "youtube": "https://www.youtube.com/channel/UCxkOLgdNumvVIQqn5ps_bJA",
+      "twitter": "https://twitter.com/TsukusuLina",
+      "github": "https://github.com/neverclear86",
+      "favorite": "- Linux\n- Node.js\n- Vue.js\n- TypeScript\n- Kotlin\n- Lua\n- Minecraft",
+      "description": "イキリプログラマをやらせて頂いております｡\n5ヶ月くらい前からVPNってVTuberプログラマ集団作ろうと言っていたのですが\nきりみんちゃんがトリガーになりようやく着手できました｡\n面白くエンジニアリングしていきましょう｡"
+    },
+    {
+      "name": "魚住さな",
+      "job": "大学生, イラストレーター, サーバーサイドエンジニア",
+      "twitter": "https://twitter.com/UouoFishLife123",
+      "youtube": "https://www.youtube.com/channel/UC7zE3VMsApiZ44XI7oH7aIg",
+      "favorite": "- AWS\n- GCP\n- Unity\n- Ruby\n- C#",
+      "description": "こんにゃくわー魚住さなです。好きなものはお魚とプログラミングです。よろしくお願いします:fish:"
+    },
+    {
+      "name": "晴栄リコ",
+      "job": "サーバーサイドのあれやこれや",
+      "twitter": "https://twitter.com/haruelico",
+      "youtube": "https://www.youtube.com/channel/UC0HB_o8VObGk8JaxU1KfZng",
+      "github": "https://github.com/haruelico",
+      "favorite": "- Linux\n- Ruby\n- Rails\n- Docker\n- Kubernetes\n- CloudNative\n- AWS\n- GCP",
+      "descripton": "やっていきマインド～～～～"
+    },
+    {
+      "name": "シビルイクリプス",
+      "job": "インフラ構築運用とか自動化とか",
+      "twitter": "https://twitter.com/sybil_eclipse",
+      "youtube": "https://www.youtube.com/channel/UCvSWB-XvVgdqFyz20lyF5xA",
+      "favorite": "Ruby, Python, Bash, D, 競技プログラミング, Tor",
+      "description": "最近競プロ始めたので広義のプログラマ系VTuberということで……よろしくお願いします！！\n動画では匿名通信やP2Pネットワークについて語ってます。"
+    },
+    {
+      "name": "はるちゃん",
+      "job": "本業はiOSアプリ作る人",
+      "twitter": "https://twitter.com/hal_cha_n",
+      "youtube": "https://www.youtube.com/channel/UCdre9A9clPahkJBdlKMCZpw",
+      "github": "https://github.com/hal-cha-n",
+      "favorite": "C/C++, iOS, swift, 焼き肉",
+      "description": "最近スナック菓子を箸で食べることを学びました。"
+    },
+    {
+      "name": "神黒サイナ(みくろ さいな)",
+      "job": "精霊(リアルは高専生&講師)",
+      "twitter": "https://twitter.com/RkEclair",
+      "youTube": "https://www.youtube.com/channel/UCL0O88te44Yn6DWq0H62woQ",
+      "github": "https://github.com/RkEclair",
+      "favorite": "(好きな順で)設計思想、哲学、Javascript、C++、小説執筆、TRPG",
+      "dislike": "(触れたうえで嫌いになったもの)C言語、Java、C#",
+      "description": "最近はVRアカデミアというグループの物置に出没していました。\n職業経験ないので危ういですががんばってます。"
+    },
+    {
+      "name": "きりみんちゃん",
+      "job": "フリーランスのAndroidエンジニア、小学生(登校拒否)",
+      "youtube": "https: //www.youtube.com/channel/UCqN87Ye4TNLB04EFhxJ0L5w",
+      "twitter": "https: //twitter.com/kirimin_chan",
+      "github": "https: //github.com/kirimin",
+      "favorite": "- Android\n- Java\n- Kotlin\n- アーキテクチャ設計\n- お絵かき\n- VideoGame\n- Twitter、インターネットカルチャー",
+      "description": "バーチャル幼女(おじさん声)プログラマーのきりみんちゃんです。\n主に雑談配信やゲーム配信の他、技術ネタ動画やバーチャルLT動画を投稿したりしています。"
+    },
+    {
+      "name": "恋言(れごん)",
+      "job": "フリーランス(Rails案件)",
+      "youtube": "https://www.youtube.com/channel/UCg6N2lmVe6GE3CvShuv6bTg",
+      "twitter": "https://twitter.com/regonn_haizine",
+      "github": "https://github.com/regonn/",
+      "favorite": "- Julia\n- Flutter\n- Elm\n- UE4\n- Manjaro Linux",
+      "description": "バーチャル俳人で俳句読んでますが、趣味でデータサイエンス(Kaggle)やっていて、プログラミングの配信も今後しようと考えてます。"
+    },
+    {
+      "name": "志紫(しむら)もこも",
+      "job": "学生バーチャル体",
+      "youtube": "https://www.youtube.com/channel/UCsNoAKTg-SbnZvwyViCBTGg",
+      "twitter": "https://twitter.com/sim_mokomo",
+      "github": "https://github.com/sim-mokomo",
+      "favorite": "- UE4\n- Unity\n- Blender",
+      "description": "ゲームプログラマのもこもです。自己紹介ではBlenderを使ってお部屋を作ってVRChatにワールドとしてアップロードしたいとか言ってますが嘘です、まだできていません。今は主にゲーム開発時に役立ちそうな事を投稿してます"
+    },
+    {
+      "name": "黒音キト (くろねきと)",
+      "job": "ブラックな独立系SIer (webフロントエンド開発)",
+      "youtube": "https://www.youtube.com/channel/UCJs_ejHQM0rcemJaeO2s5vA",
+      "twitter": "https://twitter.com/kurone_kito",
+      "github": "https://github.com/kurone-kito",
+      "favorites": "- nodeJS\n- React, React Native\n- web design, ui/ux design\n- unity3d, VR (不慣れです、、)\n- AI (不勉強でGAくらいしかわかりません、、)",
+      "description": "エンジニアとしても新人で、日々頑張ってます、、:sparkles:"
+    },
+    {"name": "ナナメ"},
+    {"name": "まんてら"}
+  ]
+}
