@@ -7,10 +7,15 @@ const Logo = () => (
   />
 );
 
+import Head from 'next/head';
 import Link from 'next/link';
 
 const LinkButton = ({title, nav}) => (
   <div>
+    <Head>
+      <title>VTuber Programmer's Network</title>
+      <link rel="icon" href="static/favicon.ico" />
+    </Head>
     <Link href={nav}>
       <a>{title}</a>
     </Link>
@@ -37,9 +42,9 @@ export default (currentNav) => (
     </div>
     <div style={{display: 'flex'}}>
       <LinkButton title="Top" nav="/index" />
-      <LinkButton title="Members" />
-      <LinkButton title="News" />
-      <LinkButton title="Contact" />
+      <LinkButton title="Members" nav="/members" />
+      <LinkButton title="News" nav="/news" />
+      <LinkButton title="Contact" nav="/contact" />
     </div>
   </div>
 );
