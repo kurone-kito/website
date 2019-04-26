@@ -36,7 +36,7 @@ import Header from '../comps/header';
 const Members = ({members}) => (
   <div>
     <Header />
-    <h1>We are VTuber Peogrammer's Network</h1>
+    <h2>We are VTuber Peogrammer's Network</h2>
     <div>
       {members.map((e) => (
         <Member info={e} />

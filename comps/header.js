@@ -35,7 +35,15 @@ const LinkButton = ({title, nav}) => (
 );
 
 export default (currentNav) => (
-  <div style={{display: 'flex', alignItems: 'center', gridColumnGap: 5}}>
+  <div
+    style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      alignItems: 'center',
+      gridColumnGap: 5,
+      width: '100%'
+    }}
+  >
     <Logo />
     <div style={{fontSize: '2em', fontWeight: 'bold'}}>
       VTuber Programmer's Network
