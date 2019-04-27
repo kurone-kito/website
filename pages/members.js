@@ -36,7 +36,7 @@ import Header from '../comps/header';
 const Members = ({members}) => (
   <div>
     <Header currentTitle={'Members'} />
-    <h2 style={{textAlign: 'center'}}>We are VTuber Peogrammer's Network</h2>
+    <h2 style={{textAlign: 'center'}}>We are VTuber Programmer's Network</h2>
     <div>
       {members.map((e) => (
         <Member key={e.name} info={e} />
