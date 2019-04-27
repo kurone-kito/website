@@ -3,15 +3,15 @@ import Header from '../comps/header';
 export default () => (
   <div>
     <Header currentTitle={'Top'} />
-    <h2 className="slideIn" style={{textAlign: 'center'}}>
+    <h2 className="pop" style={{textAlign: 'center'}}>
       Welcome to VTuber Programmer's Network
     </h2>
     <style jsx>{`
-      .slideIn {
-        animation: slideMe 1s ease;
+      .pop {
+        animation: pop_anim 1s ease;
       }
 
-      @keyframes slideMe {
+      @keyframes pop_anim {
         50% {
           transform: scale(1.2);
           opacity: 0.6;
