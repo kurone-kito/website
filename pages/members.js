@@ -32,6 +32,7 @@ const Member = ({info}) => {
 };
 
 import Header from '../comps/header';
+import Footer from '../comps/footer';
 
 const Members = ({members}) => (
   <div>
@@ -42,6 +43,7 @@ const Members = ({members}) => (
         <Member key={e.name} info={e} />
       ))}
     </div>
+    <Footer />
   </div>
 );
 

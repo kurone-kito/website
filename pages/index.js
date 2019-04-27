@@ -1,4 +1,5 @@
 import Header from '../comps/header';
+import Footer from '../comps/footer';
 
 export default () => (
   <div>
@@ -6,6 +7,7 @@ export default () => (
     <h2 className="pop" style={{textAlign: 'center'}}>
       Welcome to VTuber Programmer's Network
     </h2>
+    <Footer />
     <style jsx>{`
       .pop {
         animation: pop_anim 1s ease;
