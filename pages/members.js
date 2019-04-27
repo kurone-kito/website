@@ -2,12 +2,11 @@ const Member = ({info}) => {
   const {name, job, twitter, youtube, github, favorite, description} = info;
   return (
     <div
-      key={name}
       style={{
-        border: '3px solid lightgray',
+        border: '2px solid lightgray',
         padding: 5,
         margin: '10px 0',
-        borderRadius: 5
+        borderRadius: 2
       }}
     >
       <div style={{fontSize: '1.2em', fontWeight: 'bold'}}>{name}</div>
@@ -35,11 +34,11 @@ import Header from '../comps/header';
 
 const Members = ({members}) => (
   <div>
-    <Header />
+    <Header currentTitle={'Members'} />
     <h2>We are VTuber Peogrammer's Network</h2>
     <div>
       {members.map((e) => (
-        <Member info={e} />
+        <Member key={e.name} info={e} />
       ))}
     </div>
   </div>

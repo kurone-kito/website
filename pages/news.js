@@ -2,6 +2,6 @@ import Header from '../comps/header';
 
 export default () => (
   <div>
-    <Header />
+    <Header currentTitle={'News'} />
   </div>
 );

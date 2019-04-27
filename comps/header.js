@@ -10,7 +10,7 @@ const Logo = () => (
 import Head from 'next/head';
 import Link from 'next/link';
 
-const LinkButton = ({title, nav}) => (
+const LinkButton = ({title, nav, current}) => (
   <div>
     <Head>
       <title>VTuber Programmer's Network</title>
@@ -19,22 +19,23 @@ const LinkButton = ({title, nav}) => (
     <Link href={nav}>
       <a>{title}</a>
     </Link>
-    <style jsx>{`
-      a {
-        padding: 15px;
-        text-decoration: none;
-        color: black;
-      }
-      a:hover {
-        color: gray;
-        text-decoration: underline;
-        cursor: pointer;
-      }
-    `}</style>
+    <style jsx>
+      {`
+        a {
+          padding: 15px;
+          text-decoration: none;
+          color: ${title === current ? 'blue' : 'black'};
+        }
+        a:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      `}
+    </style>
   </div>
 );
 
-export default (currentNav) => (
+export default ({currentTitle}) => (
   <div
     style={{
       display: 'flex',
@@ -49,10 +50,10 @@ export default (currentNav) => (
       VTuber Programmer's Network
     </div>
     <div style={{display: 'flex'}}>
-      <LinkButton title="Top" nav="/index" />
-      <LinkButton title="Members" nav="/members" />
-      <LinkButton title="News" nav="/news" />
-      <LinkButton title="Contact" nav="/contact" />
+      <LinkButton title="Top" nav="/index" current={currentTitle} />
+      <LinkButton title="Members" nav="/members" current={currentTitle} />
+      <LinkButton title="News" nav="/news" current={currentTitle} />
+      <LinkButton title="Contact" nav="/contact" current={currentTitle} />
     </div>
   </div>
 );
