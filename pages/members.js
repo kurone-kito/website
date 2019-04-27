@@ -5,8 +5,9 @@ const Member = ({info}) => {
       style={{
         border: '2px solid lightgray',
         padding: 5,
-        margin: '10px 0',
-        borderRadius: 2
+        margin: '10px auto',
+        borderRadius: 2,
+        maxWidth: 600
       }}
     >
       <div style={{fontSize: '1.2em', fontWeight: 'bold'}}>{name}</div>
@@ -35,7 +36,7 @@ import Header from '../comps/header';
 const Members = ({members}) => (
   <div>
     <Header currentTitle={'Members'} />
-    <h2>We are VTuber Peogrammer's Network</h2>
+    <h2 style={{textAlign: 'center'}}>We are VTuber Peogrammer's Network</h2>
     <div>
       {members.map((e) => (
         <Member key={e.name} info={e} />
