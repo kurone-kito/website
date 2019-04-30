@@ -1,5 +1,15 @@
 const Member = ({info}) => {
   const {name, job, twitter, youtube, github, favorite, description} = info;
+  const favorites = (
+    <div>
+      Favorites:{' '}
+      {(favorite + '').split('\n').map((e) => (
+        <p key={e} style={{margin: '0 0 0 1em'}}>
+          {e}
+        </p>
+      ))}
+    </div>
+  );
   return (
     <div
       style={{
@@ -15,7 +25,7 @@ const Member = ({info}) => {
       {youtube && <a href={youtube}>YouTube</a>}
       {github && <a href={github}>Github</a>}
       <div>{`Job: ${job}`}</div>
-      <div>{`Favorite: ${favorite}`}</div>
+      <div>{favorites}</div>
       <div style={{fontSize: '0.8em', textIndent: '1em'}}>{description}</div>
       <style jsx>{`
         a {
