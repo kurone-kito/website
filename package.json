@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "lint": "./node_modules/.bin/prettier-eslint \"pages/**/*.js\" \"comps/**/*.js\" --write"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,10 @@
     "next": "^8.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }

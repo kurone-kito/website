@@ -7,15 +7,10 @@ const Logo = () => (
   />
 );
 
-import Head from 'next/head';
 import Link from 'next/link';
 
 const LinkButton = ({title, nav, current}) => (
   <div>
-    <Head>
-      <title>VTuber Programmer's Network</title>
-      <link rel="icon" href="static/favicon.ico" />
-    </Head>
     <Link href={nav}>
       <a>{title}</a>
     </Link>
@@ -35,6 +30,8 @@ const LinkButton = ({title, nav, current}) => (
   </div>
 );
 
+import Head from 'next/head';
+
 export default ({currentTitle}) => (
   <div
     style={{
@@ -45,6 +42,10 @@ export default ({currentTitle}) => (
       width: '100%'
     }}
   >
+    <Head>
+      <title>VTuber Programmer's Network</title>
+      <link rel="icon" href="static/favicon.ico" />
+    </Head>
     <Logo />
     <div style={{fontSize: '2em', fontWeight: 'bold'}}>
       VTuber Programmer's Network
