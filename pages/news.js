@@ -1,9 +1,10 @@
 import ReactMarkdown from 'react-markdown';
+import stringHash from 'string-hash';
 
 const Articles = ({articles}) => (
   <div>
     {articles.map((e) => (
-      <div className="article">
+      <div key={stringHash(e)} className="article">
         <ReactMarkdown source={e} />
       </div>
     ))}
@@ -46,18 +47,11 @@ const News = ({articles}) => (
   </div>
 );
 
-import fetch from 'isomorphic-unfetch';
-
 News.getInitialProps = async () => {
-  const indexJson = await fetch(
-    'http://localhost:3000/static/articles/_index.json'
-  );
-  const index = await indexJson.json();
+  const {default: index} = await import('../static/articles.json');
   const articles = await Promise.all(
     index.articles.map((e) =>
-      fetch(`http://localhost:3000/static/articles/${e}`).then((res) =>
-        res.text()
-      )
+      import(`../static/articles/${e}`).then((res) => res.default)
     )
   );
   return {articles};
