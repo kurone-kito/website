@@ -57,12 +57,11 @@ const Members = ({members}) => (
   </div>
 );
 
-import fetch from 'isomorphic-unfetch';
-
 Members.getInitialProps = async () => {
-  const res = await fetch('http://localhost:3000/static/members.json');
-  const json = await res.json();
-  return {members: json.members};
+  const {
+    default: {members: members}
+  } = await import('../static/members.json');
+  return {members};
 };
 
 export default Members;
