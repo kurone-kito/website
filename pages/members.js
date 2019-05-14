@@ -1,9 +1,13 @@
+import React from 'react';
+import Footer from '../comps/footer';
+import Header from '../comps/header';
+
 const Member = ({info}) => {
   const {name, job, twitter, youtube, github, favorite, description} = info;
   const favorites = (
     <div>
       Favorites:{' '}
-      {(favorite + '').split('\n').map((e) => (
+      {`${favorite}`.split('\n').map((e) => (
         <p key={e} style={{margin: '0 0 0 1em'}}>
           {e}
         </p>
@@ -27,26 +31,25 @@ const Member = ({info}) => {
       <div>{`Job: ${job}`}</div>
       <div>{favorites}</div>
       <div style={{fontSize: '0.8em', textIndent: '1em'}}>{description}</div>
-      <style jsx>{`
-        a {
-          text-decoration: none;
-          color: darkcyan;
-          margin-left: 1em;
-        }
-        a:hover {
-          text-decoration: underline;
-        }
-      `}</style>
+      <style jsx>
+        {`
+          a {
+            text-decoration: none;
+            color: darkcyan;
+            margin-left: 1em;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        `}
+      </style>
     </div>
   );
 };
 
-import Header from '../comps/header';
-import Footer from '../comps/footer';
-
 const Members = ({members}) => (
   <div>
-    <Header currentTitle={'Members'} />
+    <Header currentTitle="Members" />
     <h2 style={{textAlign: 'center'}}>We are VTuber Programmer's Network</h2>
     <div>
       {members.map((e) => (
@@ -59,7 +62,7 @@ const Members = ({members}) => (
 
 Members.getInitialProps = async () => {
   const {
-    default: {members: members}
+    default: {members}
   } = await import('../static/members.json');
   return {members};
 };

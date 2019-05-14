@@ -1,5 +1,8 @@
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import stringHash from 'string-hash';
+import Footer from '../comps/footer';
+import Header from '../comps/header';
 
 const Articles = ({articles}) => (
   <div>
@@ -8,40 +11,41 @@ const Articles = ({articles}) => (
         <ReactMarkdown source={e} />
       </div>
     ))}
-    <style jsx>{`
-      .article {
-        border: 1px solid darkcyan;
-        border-radius: 5px;
-        margin: 0px auto;
-        padding: 0.3em;
-        max-width: 600px;
-      }
-    `}</style>
+    <style jsx>
+      {`
+        .article {
+          border: 1px solid darkcyan;
+          border-radius: 5px;
+          margin: 0px auto;
+          padding: 0.3em;
+          max-width: 600px;
+        }
+      `}
+    </style>
   </div>
 );
 
 const NoArticle = () => (
   <div>
     <div className="message">No Article</div>
-    <style jsx>{`
-      .message {
-        text-align: center;
-        margin: 0px auto;
-        color: darkred;
-        border: 1px solid darkred;
-        border-radius: 5px;
-        max-width: 600px;
-      }
-    `}</style>
+    <style jsx>
+      {`
+        .message {
+          text-align: center;
+          margin: 0px auto;
+          color: darkred;
+          border: 1px solid darkred;
+          border-radius: 5px;
+          max-width: 600px;
+        }
+      `}
+    </style>
   </div>
 );
 
-import Header from '../comps/header';
-import Footer from '../comps/footer';
-
 const News = ({articles}) => (
   <div>
-    <Header currentTitle={'News'} />
+    <Header currentTitle="News" />
     {articles ? <Articles articles={articles} /> : <NoArticle />}
     <Footer />
   </div>

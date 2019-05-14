@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default () => (
   <div>
     <span>
@@ -6,11 +8,13 @@ export default () => (
         Network
       </p>
     </span>
-    <style jsx>{`
-      span {
-        bottom: 0px;
-        font-variant: small-caps;
-      }
-    `}</style>
+    <style jsx>
+      {`
+        span {
+          bottom: 0px;
+          font-variant: small-caps;
+        }
+      `}
+    </style>
   </div>
 );

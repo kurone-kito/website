@@ -1,9 +1,10 @@
-import Header from '../comps/header';
+import React from 'react';
 import Footer from '../comps/footer';
+import Header from '../comps/header';
 
 const ContactInfo = ({name, url}) => (
   <div style={{fontWeight: 'bold', margin: '0 0 0 2em'}}>
-    {name + ' '}
+    {`${name} `}
     <a href={url} style={{color: 'darkcyan'}}>
       {url}
     </a>
@@ -12,7 +13,7 @@ const ContactInfo = ({name, url}) => (
 
 export default () => (
   <div>
-    <Header currentTitle={'Contact'} />
+    <Header currentTitle="Contact" />
     <div style={{margin: '2em'}}>
       VTuber Programmer's Network (以下 VPN)
       としてのコラボレーションの企画などや

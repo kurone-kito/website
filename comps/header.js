@@ -1,3 +1,7 @@
+import Head from 'next/head';
+import Link from 'next/link';
+import React from 'react';
+
 const Logo = () => (
   <img
     src="static/vpn_logo.svg"
@@ -6,8 +10,6 @@ const Logo = () => (
     style={{borderRadius: 5, margin: 5}}
   />
 );
-
-import Link from 'next/link';
 
 const LinkButton = ({title, nav, current}) => (
   <div>
@@ -29,8 +31,6 @@ const LinkButton = ({title, nav, current}) => (
     </style>
   </div>
 );
-
-import Head from 'next/head';
 
 export default ({currentTitle}) => (
   <div
